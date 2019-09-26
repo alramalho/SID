@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane minHeight="300.0" minWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="util.MessagesController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <TabPane layoutX="0.0" layoutY="0.0" prefHeight="300.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE">
+      <tabs>
+        <Tab text="Messages Received">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextArea fx:id="messageList" layoutX="194.0" layoutY="50.0" prefWidth="373.0" wrapText="true" />
+                <ImageView fitHeight="33.5" fitWidth="33.5" layoutX="77.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@email-icon.png" />
+                  </image>
+                </ImageView>
+                <Label layoutX="49.0" layoutY="120.0" text="Messages received:" textFill="GREY">
+                  <font>
+                    <Font name="System Italic" size="11.0" fx:id="x1" />
+                  </font>
+                </Label>
+                <Label fx:id="counter" layoutX="90.0" layoutY="143.0" text="0" textAlignment="CENTER" textFill="GREY">
+                  <font>
+                    <Font size="14.0" fx:id="x2" />
+                  </font>
+                </Label>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Messages Written">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextArea fx:id="messageList2" layoutX="194.0" layoutY="50.0" prefWidth="373.0" wrapText="true" />
+                <ImageView fitHeight="33.5" fitWidth="33.5" layoutX="77.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@mongodb.png" />
+                  </image>
+                </ImageView>
+                <Label font="$x1" layoutX="52.0" layoutY="120.0" text="Messages written:" textAlignment="CENTER" textFill="GREY" />
+                <Label fx:id="counter2" font="$x2" layoutX="90.0" layoutY="143.0" text="0" textAlignment="CENTER" textFill="GREY" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="Messages Discarded">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <TextArea fx:id="messageList3" layoutX="194.0" layoutY="50.0" prefWidth="373.0" wrapText="true" />
+                <ImageView fitHeight="33.5" fitWidth="33.5" layoutX="77.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                    <Image url="@Trash-can-icon.png" />
+                  </image>
+                </ImageView>
+                <Label font="$x1" layoutX="46.0" layoutY="120.0" text="Messages discarded:" textFill="GREY" />
+                <Label fx:id="counter3" font="$x2" layoutX="90.0" layoutY="143.0" text="0" textAlignment="CENTER" textFill="GREY" />
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+  </children>
+</AnchorPane>

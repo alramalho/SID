@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="300.0" maxWidth="300.0" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="util.LoginController">
+  <children>
+    <ImageView fitHeight="47.66666793823242" fitWidth="142.99999898724855" layoutX="79.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@mongodb-logo.png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="username" layoutX="50.0" layoutY="96.0" prefWidth="200.0" promptText="username" text="admin" />
+    <PasswordField fx:id="password" blendMode="SRC_OVER" layoutX="50.0" layoutY="139.0" prefWidth="200.0" promptText="password" text="admin" />
+    <TextField fx:id="host_name" layoutX="50.0" layoutY="182.0" prefWidth="200.0" promptText="host name" text="localhost" />
+    <Button fx:id="loginButton" layoutX="108.0" layoutY="234.0" mnemonicParsing="false" onAction="#loginButton" prefWidth="85.0" text="Login">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
