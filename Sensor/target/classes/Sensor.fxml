@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="SensorController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Button fx:id="send" layoutX="180.0" layoutY="211.0" mnemonicParsing="false" onAction="#send" prefHeight="75.0" prefWidth="106.0" text="SEND" />
+    <CheckBox fx:id="keepSending" contentDisplay="LEFT" layoutX="39.0" layoutY="253.0" mnemonicParsing="false" prefHeight="24.0" prefWidth="106.0" selected="true" text="Keep Sending" textAlignment="LEFT" />
+    <Label layoutX="18.0" layoutY="26.0" text="Temperatura:" />
+    <Label layoutX="18.0" layoutY="70.0" text="Luminosidade:" />
+    <TextField fx:id="Temp" layoutX="100.0" layoutY="23.0" prefWidth="189.0" text="22.40" />
+    <TextField fx:id="Lum" layoutX="100.0" layoutY="64.0" prefWidth="189.0" text="3138" />
+    <Label layoutX="19.0" layoutY="113.0" text="Increment Temperature by" />
+    <TextField id="IncTemp" fx:id="incTemp" layoutX="180.0" layoutY="110.0" prefWidth="106.0" text="0" />
+    <Label layoutX="18.0" layoutY="164.0" text="Increment Luminosidade by" />
+    <TextField id="IncLum" fx:id="incLum" layoutX="180.0" layoutY="158.0" prefWidth="106.0" text="0" />
+    <TextField id="IncLum" fx:id="resendTime" layoutX="114.0" layoutY="219.0" prefWidth="51.0" text="2" />
+    <Label layoutX="18.0" layoutY="219.0" text="Resend Time (s)" />
+  </children>
+</AnchorPane>

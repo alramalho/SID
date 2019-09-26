@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="511.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="TTRController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Label alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="55.0" text="Time to Retrieve from Mongo&#10;(in seconds)" textAlignment="CENTER">
+      <font>
+        <Font name="System Italic" size="13.0" fx:id="x1" />
+      </font>
+      <textFill>
+        <Color blue="0.376" green="0.376" red="0.376" fx:id="x2" />
+      </textFill>
+    </Label>
+    <TextField fx:id="ttr" alignment="CENTER" layoutX="126.0" layoutY="102.0" prefWidth="48.0" />
+    <Button fx:id="ok" layoutX="119.0" layoutY="438.0" mnemonicParsing="false" onAction="#ok" prefHeight="35.0" prefWidth="61.0" text="OK" />
+    <Label layoutX="106.0" layoutY="14.0" text="SPECIFICATIONS" />
+    <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="68.0" layoutY="151.0" text="Temperature margin for alerts&#10;(in Celsius)" textAlignment="CENTER" textFill="$x2" />
+    <TextField id="ttr" fx:id="margTemp" alignment="CENTER" layoutX="125.0" layoutY="198.0" prefWidth="48.0" text="5" />
+    <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="72.0" layoutY="247.0" text="Luminosity margin for alerts&#10;(in Watts)" textAlignment="CENTER" textFill="#606060" />
+    <TextField id="ttr" fx:id="margLum" alignment="CENTER" layoutX="126.0" layoutY="294.0" prefWidth="48.0" text="50" />
+    <Label alignment="CENTER" contentDisplay="CENTER" font="$x1" layoutX="73.0" layoutY="337.0" text="Limit of repeated messages &#10;that trigger alerts." textAlignment="CENTER" textFill="$x2" />
+    <TextField id="ttr" fx:id="limiteMensagens" alignment="CENTER" layoutX="125.0" layoutY="384.0" prefWidth="48.0" text="3" />
+  </children>
+</AnchorPane>

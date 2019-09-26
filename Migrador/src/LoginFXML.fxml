@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="352.0" maxWidth="300.0" minHeight="270.0" minWidth="300.0" prefHeight="286.0" prefWidth="300.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="LoginController">
+  <children>
+    <ImageView fitHeight="73.46750259399414" fitWidth="142.42488240018122" layoutX="79.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+      <image>
+        <Image url="@1200px-MySQL.svg.png" />
+      </image>
+    </ImageView>
+    <TextField fx:id="username" layoutX="50.0" layoutY="133.0" prefWidth="200.0" promptText="Email" text="joao" />
+    <PasswordField fx:id="password" blendMode="SRC_OVER" layoutX="50.0" layoutY="176.0" prefWidth="200.0" promptText="password" text="a" />
+    <Button fx:id="loginButton" layoutX="108.0" layoutY="221.0" mnemonicParsing="false" onAction="#loginButton" prefWidth="85.0" text="Login">
+      <font>
+        <Font size="13.0" />
+      </font>
+    </Button>
+  </children>
+</AnchorPane>
